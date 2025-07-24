@@ -1,0 +1,23 @@
+.translator {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .translator__header{
+    height: 15vh;
+    display: grid;
+    place-items: center;
+    h1{
+        font-weight: 500;
+    }
+  }
+
+  .translator__content{
+    display: flex;
+    justify-content: space-between;
+    width: 92vw;
+  }
+
+}

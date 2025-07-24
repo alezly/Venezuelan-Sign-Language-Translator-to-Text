@@ -1,0 +1,44 @@
+<!-- <div class="textOutput">
+  <div class="textOutput__header">
+    <button
+      [class.selected]="selected === 'Text output'"
+      (click)="select('Text output')"
+    >
+      Salida de texto
+    </button>
+    <button
+      [class.selected]="selected === 'Voice output'"
+      (click)="select('Voice output')"
+    >
+      Salida de voz
+    </button>
+  </div>
+  <div class="textOutput__body">
+    @if( selected === 'Text output') {
+    <div class="textOutput__body__text">
+       <p>{{translation}}</p>
+    </div>
+    } @else if( selected === 'Voice output') {
+    <div class="textOutput__body__voice">
+      <p>La salida de voz se reproducirá aquí...</p>
+    </div>
+
+    <app-toggle-switch></app-toggle-switch>
+    }
+  </div>
+  <div class="textOutput__footer">
+    <button class="textOutput__footer__button__copy">Copiar</button>
+  </div>
+</div> -->
+
+<div class="card h-100 p-3 d-flex flex-column text-output-bootstrap">
+  <div class="card-body d-flex flex-column flex-grow-1 p-0 mt-3">
+    <div class="h-100 w-100 p-3 overflow-auto">
+      <p class="text-muted">{{ translation  == '' ? 'Salida del texto aquí...' : translation }}</p>
+    </div>
+  </div>
+
+  <div class="card-footer d-flex pt-3 pb-0 bg-transparent border-0">
+    <button class="btn btn-outline-success btn-sm flex-grow-1" (click)="copyTranslation()">Copiar</button>
+  </div>
+</div>
