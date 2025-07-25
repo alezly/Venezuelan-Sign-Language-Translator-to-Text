@@ -65,30 +65,30 @@ aqui van las imagenes o gifs del demo
    cd Venezuelan-Sign-Language-Translator-to-Text
    ```
 3. Frontend (Angular):
-  ```bash
-  npm install
-  ```
+    ```bash
+    npm install
+    ```
 
 4. Backend (Flask - API):
-  ```bash
-  cd api
-  ```
+    ```bash
+    cd api
+    ```
   Crea un entorno virtual (recomendado)
-  ```bash
-  python -m venv venv
-  ```
+    ```bash
+    python -m venv venv
+    ```
   Actívalo (Linux/Mac)
-  ```bash
-  source venv/bin/activate
-  ```
+    ```bash
+    source venv/bin/activate
+    ```
   O en Windows
-  ```bash
-  venv\Scripts\activate
-  ```
+    ```bash
+    venv\Scripts\activate
+    ```
   Instala las dependencias de Python
-  ```bash
-  pip install -r requirements.txt
-  ```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Uso
 
@@ -138,7 +138,6 @@ El servidor Flask estará disponible en `http://localhost:5000/`.
 
 ### Diagrama de Flujo del proceso
 
-```
 graph TD
     A[Cámara] --> B[Captura Fotograma]
     B --> C[MediaPipe: Detecta Landmarks]
@@ -149,7 +148,10 @@ graph TD
     G --> H[Actualiza Predicción]
     H --> I[/API: get_prediction/]
     B --> J[/API: video_feed/]
-```
+
+![screenshot diagrama](./img/diagramaAPI.png)
+![screenshot diagrama](./img/diagramaAPI.svg)
+
 
 ## Ejemplos de código
 
