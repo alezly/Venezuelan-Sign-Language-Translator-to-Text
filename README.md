@@ -134,9 +134,9 @@ El servidor Flask estará disponible en `http://localhost:5000/`.
 
 ### Diagrama de Flujo del proceso
 
-![screenshot diagrama](./img/diagramaAPI.svg)
+<!-- ![screenshot diagrama](./img/diagramaAPI.svg) -->
 
-<img src="./img/diagramaAPI.svg" alt="screenshot diagrama" width="50%">
+<img src="./img/diagramaAPI.svg" alt="screenshot diagrama" width="50%" style="display: block; margin: auto;">
 
 ## Ejemplos de código
 
