@@ -72,21 +72,17 @@ aqui van las imagenes o gifs del demo
 4. Backend (Flask - API):
     ```bash
     cd api
-    ```
-  Crea un entorno virtual (recomendado)
-    ```bash
+
+    # Crea un entorno virtual (recomendado)
     python -m venv venv
-    ```
-  Actívalo (Linux/Mac)
-    ```bash
+
+    # Actívalo (Linux/Mac)
     source venv/bin/activate
-    ```
-  O en Windows
-    ```bash
+
+    # O en Windows
     venv\Scripts\activate
-    ```
-  Instala las dependencias de Python
-    ```bash
+
+    # Instala las dependencias de Python
     pip install -r requirements.txt
     ```
 
@@ -138,20 +134,7 @@ El servidor Flask estará disponible en `http://localhost:5000/`.
 
 ### Diagrama de Flujo del proceso
 
-graph TD
-    A[Cámara] --> B[Captura Fotograma]
-    B --> C[MediaPipe: Detecta Landmarks]
-    C --> D[Buffer de Secuencias]
-    D --> E{Predicción cada 0.5s?}
-    E -->|Sí| F[Modelo LSTM]
-    F --> G[Filtra por Confianza > 0.8]
-    G --> H[Actualiza Predicción]
-    H --> I[/API: get_prediction/]
-    B --> J[/API: video_feed/]
-
-![screenshot diagrama](./img/diagramaAPI.png)
 ![screenshot diagrama](./img/diagramaAPI.svg)
-
 
 ## Ejemplos de código
 
