@@ -136,6 +136,8 @@ El servidor Flask estará disponible en `http://localhost:5000/`.
 
 ![screenshot diagrama](./img/diagramaAPI.svg)
 
+<img src="./img/diagramaAPI.svg" alt="screenshot diagrama" width="50%">
+
 ## Ejemplos de código
 
 ```
