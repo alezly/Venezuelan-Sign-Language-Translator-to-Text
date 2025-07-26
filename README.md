@@ -140,7 +140,7 @@ El servidor Flask estará disponible en `http://localhost:5000/`.
 
 ## Ejemplos de código
 
-```
+```python
 # Entrenamiento del modelo de red neuronal LSTM bidireccional
 
 import numpy as np
