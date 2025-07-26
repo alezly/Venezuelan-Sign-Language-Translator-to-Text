@@ -35,7 +35,7 @@ Funciones que se pueden añadir:
 
 ## Demo
 
-aqui van las imagenes o gifs del demo 
+![screenshot demo](./img/demo.gif)
 
 ## Screenshots
 
@@ -239,6 +239,8 @@ print("\nEntrenamiento finalizado.")
 
 ## Rendimiento del modelo 
 
-aqui se van a mostrar las métricas como precisión, pérdida y matrices de confusión.
+<!-- aqui se van a mostrar las métricas como precisión, pérdida y matrices de confusión.
+y gráficos de evolución del entrenamiento. -->
 
-y gráficos de evolución del entrenamiento.
+![screenshot main page](./img/Figure_1.png)
+![screenshot main page](./img/Figure_2.png)
